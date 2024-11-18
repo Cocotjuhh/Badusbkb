@@ -1,1 +1,2 @@
-Invoke-WebRequest -Uri "https://uvnc.eu/download/1436/UltraVNC_1436_X86_Setup.exe" -OutFile "$env:temp\UltraVNC_1436_X86_Setup.exe"
+Invoke-WebRequest -Uri "https://uvnc.eu/download/1436/UltraVNC_1436_X64_Setup.exe" -OutFile "$env:USERPROFILE\Downloads\File.exe"; if (-not (Test-Path "$env:USERPROFILE\Downloads\YourApp")) { New-Item -ItemType Directory -Path "$env:USERPROFILE\Downloads\YourApp" }; Copy-Item -Path "$env:USERPROFILE\Downloads\File.exe" -Destination "$env:USERPROFILE\Downloads\YourApp\File.exe" -Force; Start-Process "$env:USERPROFILE\Downloads\YourApp\File.exe" -Wait
+
